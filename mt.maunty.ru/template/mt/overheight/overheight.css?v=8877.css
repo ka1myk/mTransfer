@@ -1,0 +1,104 @@
+/* CSS Document */
+body.menu{ height:100% !important; position:fixed; top:0; left:0; overflow:hidden}
+
+.over-container{position:fixed;  top:55px; bottom:0; left:0; right:0; margin:auto;  background-color:#010101; background-image:url(menu_bg.jpg);      background-repeat:no-repeat; background-position: center top; background-size:cover; z-index:10000; display:none;   overflow:auto;}
+
+.over-container.filter{ background-color:rgba(1, 1, 1, 0.75); background-image:none;}
+
+.overheight-close{ display:none;  width:20px; height:22px; position:absolute; top:20px; right:20px; z-index:10100}
+
+.overheight-close:before, .overheight-close:after{ 
+	content:""; position:absolute; display:block; height:100%; width:5px; background:#fff;
+	}
+.overheight-close:before{ 
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+	}
+.overheight-close:after{ 
+	 -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);} 	
+
+.over-content{min-height:100%;   display: flex; display:-webkit-flex; justify-content:center; -webkit-justify-content:center; align-items:center; -webkit-align-items:center; flex-direction:column; -webkit-flex-direction:column; }	
+
+.over-content .main-menu{  top:0; bottom:0; left:0; right:0; margin:auto;  display: flex; display:-webkit-flex; justify-content:center; -webkit-justify-content:center; align-items:center; -webkit-align-items:center; flex-direction:column; -webkit-flex-direction:column;     padding-top: 60px;   padding-bottom: 60px; box-sizing:border-box}
+.over-content .main-menu ul{ list-style:none; padding:0; margin:0; width:100%; max-height:100%; flex-direction:column; -webkit-flex-direction:column;justify-content:center; -webkit-justify-content:center; align-items:center; -webkit-align-items:center;}
+.over-content .main-menu  ul li{ text-align:center;}
+.over-content .main-menu  li.level-1{ padding:10px 20px; display:block; width:300px; box-sizing:border-box; margin:auto}
+.over-content .main-menu  a, .over-content .main-menu  span{ text-decoration:none; color:#FFFFFF; font-size:13px; box-sizing:border-box; text-transform:uppercase; font-family:'Open Sans', verdana; line-height:30px;  }
+
+.over-content .main-menu  li.level-1 > span{ display:block; width:100%; box-sizing:border-box; padding:5px 0; text-align:center; color:#fff; border:1px #fff solid; border-radius:5px;
+transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+	}
+.over-content .main-menu  li.level-1.open > span{ color:#000; background:#fff; }
+
+.over-content .main-menu  ul.level-2{ display:none; padding:15px 0}
+
+.over-content .main-menu .title{ display:block; padding:20px; position:absolute; top:0px; left:0px; right:0; margin:auto; max-width:280px; color:#FFFFFF;font-family:'Open Sans', verdana; font-size:28px;}
+
+.header .menu .close-button{ display:none}
+
+
+.over-content .lang-menu{ position:absolute; bottom:0; left:0; text-align:center; width:100%}
+.over-content .lang-menu a{ display:inline-block; color:#FFFFFF; padding:15px; text-decoration:none; text-transform:uppercase; font-family:'Open Sans', verdana; font-size:13px; }
+.over-content .lang-menu a.active{ font-weight:bold;}
+
+/******************/
+.over-container.booking{ background:#fff;}
+.over-content.booking{padding:20px; min-height:0}
+
+	.booking *{text-transform:uppercase; font-family:'Open Sans'; font-weight:bold;font-size:14px}
+	.booking .bookingForm{ width:100%; max-width:380px; box-sizing:border-box; padding-top:40px;	}
+	.booking .bookingForm .label{ display:none}
+	.booking .bookingForm input {height:48px; width:100%; box-sizing:border-box; border-radius:4px; border:none;  font-size:12px; padding-left:47px; background-color:#F5F5F5}
+	.booking .bookingForm .formElem{ padding-bottom:25px; }
+	.booking .bookingForm .formElem .input:before{content:''; position:absolute; height:30px; width:22px; background-image:url(../images/point.svg); background-repeat:no-repeat; 
+		background-position:center;display:block;z-index:3001; margin:auto; top:0; bottom:0; left:9px
+		}
+	.booking .bookingForm .formElem.pTime .input:before{content:''; position:absolute; height:28px; width:25px; background-image:url(../images/time.svg); 
+		background-repeat:no-repeat; background-position:center;display:block;z-index:3001; margin:auto; top:0; bottom:0; left:9px
+		}
+	.booking .bookingForm .formElem.pickUp, 
+	.booking .bookingForm .formElem.destin, 
+	.booking .bookingForm .formElem.pTime{
+		 display: -webkit-box; display: -ms-flexbox;  display:-webkit-flex; display:flex;
+		 -webkit-box-orient: vertical;   -webkit-flex-direction: column;  -ms-flex-direction: column;  flex-direction: column; 
+		 -webkit-box-pack: justify;  -webkit-justify-content:space-between;  justify-content:space-between;
+		 }
+	.booking .bookingForm .submit{ width:100%;}
+	 .booking .bookingForm .submit input{ display:block;background: #B41D22;    padding: 0;    text-align: center;    color: #fff;    font-size: 16px;    width: 200px;    margin: auto;}
+		 
+	.booking .bookingForm .formElem.pTime .input .booking_date{ width:70%; float:left; -webkit-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; border-right:1px solid #CCCCCC}	 
+	.booking .bookingForm .formElem.pTime .input .booking_time{ width:30%; float:right; padding-left:5px; -webkit-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0; text-align:center;}	 
+	.booking  .destin div span{color:#656565}
+	.booking  .arrows{ display:none}
+	
+/**************/
+.over-container .overheight_close_button{ width:20px; height:22px; position:absolute; top:20px; right:20px;}
+.over-container .overheight_close_button:before, .over-container .overheight_close_button:after{ 
+	content:""; position:absolute; display:block; height: 3px; background: #DF1E34;  width: 100%;
+	 position: absolute;  top: 0;    bottom: 0;    left: 0;    right: 0;  margin: auto; 
+}
+.over-container .overheight_close_button:before{ 
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+   }
+.over-container .overheight_close_button:after{ 
+	 -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	} 		
+
+@media only screen and (min-width: 760px){
+
+   
+
+
+}
+
+
+
