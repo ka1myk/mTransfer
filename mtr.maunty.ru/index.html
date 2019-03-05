@@ -1,0 +1,724 @@
+﻿
+
+<!DOCTYPE html>
+<html class="homepage ">
+<head>
+<meta charset="utf-8" />
+<title>MTransfer</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+<meta name="theme-color" content="#000000">
+
+<meta name="msapplication-navbutton-color" content="#000000">
+
+<!-- <meta name="apple-mobile-web-capable" content="yes"> -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+
+<link href="template/mt/js/dtmaster/jquery.datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="template/mt/js/jquery.fancybox.min.css" type="text/css" rel="stylesheet" media="screen" />
+
+<link href="template/mt/overheight/overheight.css%3Fv=5611.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="template/mt/popup_window/popup_window.css%3Fv=8789.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="plugins/slick/slick.css%3Fv=3421.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="template/mt/css/style.css%3Fv=8590.css" type="text/css" rel="stylesheet" media="screen" />
+
+
+<link href="template/mt/modules/menu/tpl_main_menu/modul.css" type="text/css" rel="stylesheet"  /><link href="template/mt/modules/user_auth/tpl_default/modul.css" type="text/css" rel="stylesheet"  />
+<script type="text/javascript" src="template/mt/html5-ie.js"></script>
+<script type="text/javascript" src="template/mt/js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript" src="template/mt/js/dtmaster/jquery.datetimepicker.full.min.js" ></script>
+<script type="text/javascript" src="plugins/slick/slick.min.js" ></script>
+<script type="text/javascript" src="plugins/sticky-kit.js" ></script>
+
+
+<script type="text/javascript" src="template/mt/modules/menu/tpl_main_menu/modul.js" ></script><script type="text/javascript" src="modules/user_auth/modul.js" ></script></head>
+
+<body  class="homepage ">
+
+       <header>
+       		<div class="wrapper">
+            	<div class="header ">
+                       <a class="logo" href="index.html"></a>
+                        
+                       <div class="menuWrap">
+						  	<a class="menu desktop" href="index.html#" onClick="fucMenu();  return false;" ><span></span></a>
+                        	<a class="menu mobi" href="index.html#" id="menu-mobi-button" onclick="content_overheight(this); return false;"   content="main-menu"> <span></span></a>    
+                        </div>
+                  		
+                                   		</div>
+             
+                
+	                 <nav class="main-menu-wrap" id="main-menu"> 
+      	<div class="main-menu">
+            <ul class="smenu level-1 " ><li class=" level-1 red  current close"><a class=" accardion anim red  current" href="index.html" >HOW IT WORKS</a></li><li class=" level-1 anchor  current close"><a class=" accardion anim anchor  current" href="index.html#benefits" >BENEFITS</a></li><li class=" level-1 anchor  current close"><a class=" accardion anim anchor  current" href="index.html#our_fleet" >OUR FLEET</a></li><li class=" level-1 anchor  current close"><a class=" accardion anim anchor  current" href="index.html#costumer_reviews" >COSTUMER REVIEWS</a></li><li class=" level-1 anchor  current close"><a class=" accardion anim anchor  current" href="index.html#partners" >PARTNERS</a></li><li class=" level-1    close"><a class=" accardion anim   " href="en/terms-and-conditions.html" >TERMS & CONDITIONS</a></li><li class=" level-1    close"><a class=" accardion anim   " href="en/privacy-policy.html" >PRIVACY POLICY</a></li></ul>  
+        </div>
+        <script>
+		
+	$('a.anchor').on('click', function(e){
+		e.preventDefault();
+		goToHash(this);
+	});
+        
+	
+	 </script>
+    
+      </nav>  
+       
+               
+			                  
+              </div> 
+        </header>
+
+      
+       <div class="container">
+       		
+				<section>
+            	<div class="section screen1">
+
+	<div class="background">
+                <video autoplay loop muted  preload id="video" class="video" width="auto" height="auto">
+                   <source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                   <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                   <source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+                  </video>
+                  <script>$(document).ready(function(e) {document.getElementById('video').play();});</script>
+    </div>
+        
+	<div class="wrapper">
+		<div class="content">
+    		<h1><span>Business Transfers</span> French Riviera</h1>
+		</div>
+        
+       
+		<div class="bookingFormWrap homeForm" id="bookingFormWrap">
+           <div class="content"> <h2>Book Your Ride</h2></div>
+            
+            <div class="bookingFormTabs">
+                <div class="bookingFormTabB active" onClick="selectTab1()">ONE - WAY</div>
+                <div class="bookingFormTabB" onClick="selectTab2()">HOURLY BOOKING</div>
+            </div>
+            
+            <div class="bookingFormTabsContent">
+            <div class="bookingFormTab active" id="bookingFormTab1" >
+                         <form name="bookingForm" class="bookingForm ajax-form" method="post" >
+                
+                <div class="form-section">
+                                <div class="formField pickUp">
+                    <div class="input">
+                    	<span class="icon"><svg viewBox="0 0 71.85 99.97"><path class="cls-1" d="M36.27,101a13.61,13.61,0,0,1-1.45-.46,5.17,5.17,0,0,1-2.28-1.83A328.9,328.9,0,0,1,12,67.28,120.29,120.29,0,0,1,3.46,49.22a41.44,41.44,0,0,1-2.24-8.71,28.27,28.27,0,0,1,.07-7A36.45,36.45,0,0,1,8.7,15.18c5.62-7.33,13-12.1,22.12-13.56C44.24-.56,55.47,3.73,64.33,14A36.21,36.21,0,0,1,72.7,33.57,31.73,31.73,0,0,1,70.94,48,108.09,108.09,0,0,1,63.7,64.1a281.06,281.06,0,0,1-17,27.15c-1.69,2.43-3.43,4.82-5.13,7.24A5.59,5.59,0,0,1,37.8,101l-.13.07h-1.4Zm.07-89.91a24.52,24.52,0,0,0-7.5,1.3,27,27,0,0,0-17.56,18,23.14,23.14,0,0,0,.16,15.45A93.21,93.21,0,0,0,16,56.45,244.13,244.13,0,0,0,34.7,86.69a2.72,2.72,0,0,0,4.61-.06A266.67,266.67,0,0,0,55.19,61.7a95.83,95.83,0,0,0,7.34-15.94,22,22,0,0,0,1.38-8.4,29.52,29.52,0,0,0-1.52-7.83A27.28,27.28,0,0,0,36.34,11.13Z" transform="translate(-1.04 -1.07)"/><path class="cls-1" d="M37.85,52a12.63,12.63,0,1,1,12.5-12.76v.08A12.57,12.57,0,0,1,37.89,52Z" transform="translate(-1.04 -1.07)"/></svg></span>
+                        <input  class="value ajax-form-PICKUP form-PICKUP" name="PICKUP" type="text" value=""  
+                        placeholder="PICK UP" id="originautocomplete" onFocus="geolocate()"/></div>
+                </div>
+                
+              
+                
+                                <div class="formField destin">
+                    <div class="input">
+                    	<span class="icon"><svg viewBox="0 0 71.85 99.97"><path class="cls-1" d="M36.27,101a13.61,13.61,0,0,1-1.45-.46,5.17,5.17,0,0,1-2.28-1.83A328.9,328.9,0,0,1,12,67.28,120.29,120.29,0,0,1,3.46,49.22a41.44,41.44,0,0,1-2.24-8.71,28.27,28.27,0,0,1,.07-7A36.45,36.45,0,0,1,8.7,15.18c5.62-7.33,13-12.1,22.12-13.56C44.24-.56,55.47,3.73,64.33,14A36.21,36.21,0,0,1,72.7,33.57,31.73,31.73,0,0,1,70.94,48,108.09,108.09,0,0,1,63.7,64.1a281.06,281.06,0,0,1-17,27.15c-1.69,2.43-3.43,4.82-5.13,7.24A5.59,5.59,0,0,1,37.8,101l-.13.07h-1.4Zm.07-89.91a24.52,24.52,0,0,0-7.5,1.3,27,27,0,0,0-17.56,18,23.14,23.14,0,0,0,.16,15.45A93.21,93.21,0,0,0,16,56.45,244.13,244.13,0,0,0,34.7,86.69a2.72,2.72,0,0,0,4.61-.06A266.67,266.67,0,0,0,55.19,61.7a95.83,95.83,0,0,0,7.34-15.94,22,22,0,0,0,1.38-8.4,29.52,29.52,0,0,0-1.52-7.83A27.28,27.28,0,0,0,36.34,11.13Z" transform="translate(-1.04 -1.07)"/><path class="cls-1" d="M37.85,52a12.63,12.63,0,1,1,12.5-12.76v.08A12.57,12.57,0,0,1,37.89,52Z" transform="translate(-1.04 -1.07)"/></svg></span>
+                        <input  class="value ajax-form-DESTINATION form-DESTINATION" name="DESTINATION" type="text" 
+                        value="" id="destinationautocomplete" onFocus="geolocate()"
+                        placeholder="DESTINATION" ></div>
+                     
+                </div>
+                
+				                <div class="formField pDate">
+                    <div class="input">
+                        
+                         <span class="icon"><svg  viewBox="0 0 99.97 99.59"><path class="cls-1" d="M6.79,28a12,12,0,0,0-.18,3.22l0,.36A22.13,22.13,0,0,0,9.19,40,22.67,22.67,0,0,0,20.57,50.35a21.8,21.8,0,0,0,10,1.69,22.27,22.27,0,0,0,15.54-7.56A21.82,21.82,0,0,0,51.54,33.4,22.77,22.77,0,0,0,33.63,7.09a21.15,21.15,0,0,0-13.69,1.7l-.31.13c-.2-.5-.38-1-.59-1.45a5,5,0,0,0-3.82-3,2.63,2.63,0,0,1-.62-.06L15.31,4a31.56,31.56,0,0,1,10-3.18c.75-.1,1.51-.14,2.26-.21l.34-.06h2.71l1.81.19A27.69,27.69,0,0,1,40,2.69,28.94,28.94,0,0,1,50,9.47a28.49,28.49,0,0,1,7.62,14.65,27.85,27.85,0,0,1-2.71,18.41A28.91,28.91,0,0,1,42.63,54.84,27.63,27.63,0,0,1,32.71,58a28.17,28.17,0,0,1-20.43-5.4A28.7,28.7,0,0,1,3.33,42a28,28,0,0,1-2.7-9.17c-.1-.71-.14-1.43-.21-2.14v-2.6h0c.06-.6.11-1.19.18-1.79a33.61,33.61,0,0,1,1.25-5.71A35.87,35.87,0,0,1,4.06,14.9c.16-.31.34-.61.51-.93-.8-.72-1.59-1.44-2.39-2.14-.41-.36-.84-.7-1.26-1l-.08-.1a1.17,1.17,0,0,1,.38-1.61A1.35,1.35,0,0,1,1.64,9,57,57,0,0,1,13.8,8.23h.63a1.23,1.23,0,0,1,1.31,1.15.27.27,0,0,1,0,.09c0,.94.09,1.88.09,2.82A51.43,51.43,0,0,1,15.52,19C15.4,20,15.2,21.1,15,22.16a1,1,0,0,1-1.22.7,1.06,1.06,0,0,1-.34-.16,10.52,10.52,0,0,1-.9-.75L10,19.77c-.22.25-.44.49-.63.74a14.31,14.31,0,0,0-2,5,8.09,8.09,0,0,0-.19.82Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M8.06,54l1.16.91a30.61,30.61,0,0,0,6.34,3.92.53.53,0,0,1,.18.28,1.31,1.31,0,0,1,0,.28V88.66a4.72,4.72,0,0,0,.31,2,3.44,3.44,0,0,0,3,2.16,5.61,5.61,0,0,0,.82,0H88.52a4.68,4.68,0,0,0,2-.32,3.44,3.44,0,0,0,2.13-3,6.17,6.17,0,0,0,0-.86V39H60.39c2.6-7.91,1.75-15.55-1.59-23.05H69.63v7.72A7.67,7.67,0,0,0,84.85,25,8.5,8.5,0,0,0,85,23.36V15.93h.29c1.49,0,3,0,4.47.06a11,11,0,0,1,6.88,2.86,11.18,11.18,0,0,1,3.58,6.81,12.44,12.44,0,0,1,.14,1.93V88.51a11.36,11.36,0,0,1-3.65,8.64A11.06,11.06,0,0,1,90,100.1c-.51,0-1,.06-1.55.06H19.51a11.18,11.18,0,0,1-8.41-3.58,11.06,11.06,0,0,1-3-6.38C8,89.59,8,89,8,88.37V54Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M73.46,17.82v-6A3.58,3.58,0,0,1,77,8.19a4.25,4.25,0,0,1,.71.06,3.46,3.46,0,0,1,3.35,3,5.5,5.5,0,0,1,.08.91V23.58A3.78,3.78,0,0,1,80,26.52a3.86,3.86,0,0,1-3.3.91,3.48,3.48,0,0,1-3.21-3.58v-.22c0-1.93,0-3.85,0-5.77h0Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M81.13,85.11H73.47V77.45h7.66Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.72,85.11H58.07V77.45h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M42.69,77.46h7.66v7.65H42.69Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M27.31,85.1V77.47H35V85.1Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M73.47,62.08h7.64v7.65H73.47Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.72,69.74H58.07V62.08h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M42.69,69.73V62.09h7.66v7.64Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M35,62.08v7.66H27.31V62.08Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M81.11,54.35H73.46V46.69h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.74,46.69v7.65H58.08V46.69Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M28.57,25.25a1.63,1.63,0,0,1,.54,0,.83.83,0,0,0,.88-.31q4.56-4.31,9.16-8.59A1.74,1.74,0,0,1,41,16a1.28,1.28,0,0,1,.91,1.21,1.73,1.73,0,0,1-.46,1.37l-4.3,5q-2,2.36-4.08,4.73a.52.52,0,0,0-.09.34,5.17,5.17,0,0,1-1.12,3.91.61.61,0,0,0-.13.31c-.2,3.19-.39,6.37-.58,9.56a2.07,2.07,0,0,1-2,1.66,3.57,3.57,0,0,1-.72-.1,1.38,1.38,0,0,1-1.14-1.34q-.39-4.52-.78-9a1,1,0,0,0-.5-.88,2.16,2.16,0,0,1-.67-.77,4.92,4.92,0,0,1-.62-3.78A3.62,3.62,0,0,1,28.57,25.25Z" transform="translate(-0.38 -0.57)"/></svg></span> 
+                        <input class="value ajax-form-DATE form-DATE booking_date" name="DATE" value=""                            type="text" placeholder="DATE" autocomplete="off" onClick="booking_date(this)">
+                        </div>
+               </div>
+               
+                 
+              <div class="formField pTime">
+                    <div class="input">         
+                         <span class="icon"><svg  viewBox="0 0 99.97 99.59"><path class="cls-1" d="M6.79,28a12,12,0,0,0-.18,3.22l0,.36A22.13,22.13,0,0,0,9.19,40,22.67,22.67,0,0,0,20.57,50.35a21.8,21.8,0,0,0,10,1.69,22.27,22.27,0,0,0,15.54-7.56A21.82,21.82,0,0,0,51.54,33.4,22.77,22.77,0,0,0,33.63,7.09a21.15,21.15,0,0,0-13.69,1.7l-.31.13c-.2-.5-.38-1-.59-1.45a5,5,0,0,0-3.82-3,2.63,2.63,0,0,1-.62-.06L15.31,4a31.56,31.56,0,0,1,10-3.18c.75-.1,1.51-.14,2.26-.21l.34-.06h2.71l1.81.19A27.69,27.69,0,0,1,40,2.69,28.94,28.94,0,0,1,50,9.47a28.49,28.49,0,0,1,7.62,14.65,27.85,27.85,0,0,1-2.71,18.41A28.91,28.91,0,0,1,42.63,54.84,27.63,27.63,0,0,1,32.71,58a28.17,28.17,0,0,1-20.43-5.4A28.7,28.7,0,0,1,3.33,42a28,28,0,0,1-2.7-9.17c-.1-.71-.14-1.43-.21-2.14v-2.6h0c.06-.6.11-1.19.18-1.79a33.61,33.61,0,0,1,1.25-5.71A35.87,35.87,0,0,1,4.06,14.9c.16-.31.34-.61.51-.93-.8-.72-1.59-1.44-2.39-2.14-.41-.36-.84-.7-1.26-1l-.08-.1a1.17,1.17,0,0,1,.38-1.61A1.35,1.35,0,0,1,1.64,9,57,57,0,0,1,13.8,8.23h.63a1.23,1.23,0,0,1,1.31,1.15.27.27,0,0,1,0,.09c0,.94.09,1.88.09,2.82A51.43,51.43,0,0,1,15.52,19C15.4,20,15.2,21.1,15,22.16a1,1,0,0,1-1.22.7,1.06,1.06,0,0,1-.34-.16,10.52,10.52,0,0,1-.9-.75L10,19.77c-.22.25-.44.49-.63.74a14.31,14.31,0,0,0-2,5,8.09,8.09,0,0,0-.19.82Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M8.06,54l1.16.91a30.61,30.61,0,0,0,6.34,3.92.53.53,0,0,1,.18.28,1.31,1.31,0,0,1,0,.28V88.66a4.72,4.72,0,0,0,.31,2,3.44,3.44,0,0,0,3,2.16,5.61,5.61,0,0,0,.82,0H88.52a4.68,4.68,0,0,0,2-.32,3.44,3.44,0,0,0,2.13-3,6.17,6.17,0,0,0,0-.86V39H60.39c2.6-7.91,1.75-15.55-1.59-23.05H69.63v7.72A7.67,7.67,0,0,0,84.85,25,8.5,8.5,0,0,0,85,23.36V15.93h.29c1.49,0,3,0,4.47.06a11,11,0,0,1,6.88,2.86,11.18,11.18,0,0,1,3.58,6.81,12.44,12.44,0,0,1,.14,1.93V88.51a11.36,11.36,0,0,1-3.65,8.64A11.06,11.06,0,0,1,90,100.1c-.51,0-1,.06-1.55.06H19.51a11.18,11.18,0,0,1-8.41-3.58,11.06,11.06,0,0,1-3-6.38C8,89.59,8,89,8,88.37V54Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M73.46,17.82v-6A3.58,3.58,0,0,1,77,8.19a4.25,4.25,0,0,1,.71.06,3.46,3.46,0,0,1,3.35,3,5.5,5.5,0,0,1,.08.91V23.58A3.78,3.78,0,0,1,80,26.52a3.86,3.86,0,0,1-3.3.91,3.48,3.48,0,0,1-3.21-3.58v-.22c0-1.93,0-3.85,0-5.77h0Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M81.13,85.11H73.47V77.45h7.66Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.72,85.11H58.07V77.45h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M42.69,77.46h7.66v7.65H42.69Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M27.31,85.1V77.47H35V85.1Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M73.47,62.08h7.64v7.65H73.47Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.72,69.74H58.07V62.08h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M42.69,69.73V62.09h7.66v7.64Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M35,62.08v7.66H27.31V62.08Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M81.11,54.35H73.46V46.69h7.65Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M65.74,46.69v7.65H58.08V46.69Z" transform="translate(-0.38 -0.57)"/><path class="cls-1" d="M28.57,25.25a1.63,1.63,0,0,1,.54,0,.83.83,0,0,0,.88-.31q4.56-4.31,9.16-8.59A1.74,1.74,0,0,1,41,16a1.28,1.28,0,0,1,.91,1.21,1.73,1.73,0,0,1-.46,1.37l-4.3,5q-2,2.36-4.08,4.73a.52.52,0,0,0-.09.34,5.17,5.17,0,0,1-1.12,3.91.61.61,0,0,0-.13.31c-.2,3.19-.39,6.37-.58,9.56a2.07,2.07,0,0,1-2,1.66,3.57,3.57,0,0,1-.72-.1,1.38,1.38,0,0,1-1.14-1.34q-.39-4.52-.78-9a1,1,0,0,0-.5-.88,2.16,2.16,0,0,1-.67-.77,4.92,4.92,0,0,1-.62-3.78A3.62,3.62,0,0,1,28.57,25.25Z" transform="translate(-0.38 -0.57)"/></svg></span> 
+                        <input  class="value ajax-form-TIME form-TIME booking_time" name="TIME" value=""  
+                            type="text"  placeholder="TIME" autocomplete="off" onClick="booking_time(this)">
+                        </div>
+                </div>
+                
+                </div>
+                <div class="formButton">
+                    <div  class="submit">
+                                           <input class="value ajax-form-DISTANCE form-DISTANCE " name="DISTANCE" value="0"  
+                            type="hidden" id="geolocatedistance">
+                                             <input class="value ajax-form-DURATION form-DURATION " name="DURATION" value="0"  
+                            type="hidden" id="geolocateduration">
+                            
+                    <input name="start_booking" class="submitButton anim" type="button" value="BOOK NOW" form_class="ajax-form" onClick="initMap(this)">
+                    </div>
+                </div>	
+            </form>
+            </div>
+        
+            <div class="bookingFormTab" id="bookingFormTab2" >
+            
+            </div>
+			<div class="hiw-link-wrap"><a href="index.html#" class="hiw-link">HOW IT WORKS</a></div>
+        	</div> <!-- end tabbsContent -->
+        
+        </div>
+		
+       
+    </div><!-- end wrapper -->
+     <div class="screen-arrow"><span class="icon"><svg version="1.1" x="0px" y="0px"
+	 viewBox="0 0 55.50615 29.50615" enable-background="new 0 0 55.50615 29.50615" xml:space="preserve">
+<g>
+	<g>
+		<path d="M0.44241,3.06373c8.66667,8.66667,17.33333,17.33333,26,26c1.3691,1.3691,3.49042-0.75222,2.12132-2.12132
+			c-8.66667-8.66667-17.33333-17.33333-26-26C1.19463-0.42669-0.92669,1.69463,0.44241,3.06373L0.44241,3.06373z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M28.56373,29.06373c8.83333-8.83333,17.66667-17.66667,26.5-26.5c1.3691-1.3691-0.75222-3.49042-2.12132-2.12132
+			c-8.83333,8.83333-17.66667,17.66667-26.5,26.5C25.07331,28.31151,27.19463,30.43283,28.56373,29.06373L28.56373,29.06373z"/>
+	</g>
+</g>
+</svg>
+</span> </div>
+</div>
+
+<div class="section" id="benefits">
+	<div class="wrapper">
+    	<div class="blocks  benefits">
+        	
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <h2>We will be there</h2>
+                <p>No hurry at pickups, we include complimentary wait time — 60 minutes at airports, 15 minutes at other destinations. For airport pickups, chauffeurs use flight tracking to ensure they are there when you arrive.</p>
+            	</div>
+                </div>
+            </div>
+            
+                        
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <h2>Professional service</h2>
+                <p>Choose between one-way or hourly rides to spend your business trips, weddings, transfers from/to airport and other events with our fully licensed and insured professional drivers on your journey.</p>
+            	</div>
+                </div>
+            </div>
+            
+             <div class="block">
+             	<div class="content">
+            	<div class="block-content">
+                <h2>New cars & all inclusive-rates</h2>
+                <p>Our fleet includes newest Business Class, Business Van, and First Class Mercedes-Benz cars. There are no hidden fees. Your affordable, all-inclusive rate covers all taxes, tolls, fees, and gratuities.</p>
+            	</div>
+                </div>
+            </div>
+        	
+        </div>
+    
+    </div>
+</div>    
+
+
+<div class="section cars" id="our_fleet">
+	<div class="wrapper">
+    	<div class="wrapper-bg">
+    	<div class="section-title">Our Fleet</div>
+    	<div class="blocks  cars">
+        	
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/bisclass.jpg)"></div>
+                <div class="block-title">
+                	<h2>Business Class</h2>
+                    <div class="car-props">
+                        <div class="car-prop pass"><span class="icon"><svg   viewBox="0 0 100.01 114.46984"   version="1.1"    >
+  <path
+     d="m 11.97,114.46984 c 0.11,-1.39 0.21,-2.77 0.32,-4.16 q 0.31,-3.71 0.63,-7.41 c 0.2,-2.28 0.41,-4.549996 0.62,-6.829996 0.18,-1.93 0.35,-3.85 0.54,-5.78 0.19,-1.93 0.41,-4 0.63,-6 0.22,-2 0.43,-4.06 0.68,-6.09 a 98.66,98.66 0 0 1 1.76,-11.45 15.73,15.73 0 0 1 7.36,-10 c 1.46,-0.89 3,-1.58 4.57,-2.36 l 0.49,-0.23 -29.57,-31.32 8.11,-6.88 32.14,34.39 a 67.77,67.77 0 0 0 -10.71,3.85 l 0.54,0.6 16.27,17.34 16.56,17.61 17.74,18.899996 5.14,5.48 a 3.88,3.88 0 0 1 0.26,0.34 z"  />
+  <path
+     d="m 100,114.39984 c -0.65,-0.68 -1.31,-1.35 -2,-2 l -10.71,-11.5 -15.76,-16.919996 -15.76,-16.92 -15.29,-16.51 -0.17,-0.21 c 1,-0.22 1.87,-0.45 2.79,-0.64 a 64.55,64.55 0 0 1 15.37,-1.23 59,59 0 0 1 22.06,5 c 2.08,0.91 4.17,1.81 6.17,2.88 a 15.47,15.47 0 0 1 7.6,8.55 22,22 0 0 1 1,4.48 q 0.45,3.23 0.84,6.47 c 0.27,2.26 0.51,4.52 0.76,6.78 0.25,2.26 0.47,4.38 0.7,6.56 0.23,2.18 0.41,4.11 0.61,6.17 q 0.27,2.76 0.54,5.519996 0.27,2.76 0.54,5.74 c 0.19,2 0.37,4 0.55,6 0,0.52 0.12,1 0.17,1.54 v 0.29 z"  />
+  <path
+     d="m 36.15,22.649844 c 0.09,-6.15 1.68,-11.15 5.2,-15.4499996 a 18.72,18.72 0 0 1 10.44,-6.66999996 17.78,17.78 0 0 1 15.82,3.69999996 21.64,21.64 0 0 1 7.7,13.0599996 23.62,23.62 0 0 1 -0.82,12.55 21.08,21.08 0 0 1 -9.1,11.55 17.67,17.67 0 0 1 -10.85,2.58 18.3,18.3 0 0 1 -11.29,-5.07 22,22 0 0 1 -6.76,-12.8 c -0.19,-1.35 -0.24,-2.71 -0.34,-3.45 z"  />
+</svg>
+</span>Passengers: 4</div>
+                        <div class="car-prop lug"><span class="icon"><svg   viewBox="0 0 99.992749 84.947423"   version="1.1"  >
+  <path
+     d="m 23.032756,84.847429 v -69.22 h 7.59 c 0.13,-1.11 0.21,-2.11 0.37,-3.09 1,-6.2699998 4.82,-10.0999998 10.83,-11.54999984 a 35,35 0 0 1 16.51,0 c 6.75,1.62000004 10.62,6.63000004 10.95,13.57999984 0,0.28 0,0.55 0.08,1 h 7.6 v 69.31 h -53.93 z m 15.69,-69.34 h 22.54 a 6.92,6.92 0 0 0 -7,-7.2399998 c -2.75,-0.1 -5.52,-0.06 -8.27,0 -4.3,0.03 -7.04,2.7499998 -7.27,7.2399998 z" />
+  <path
+     d="m 15.612756,15.577429 v 69.37 h -1.68 c -2.11,0 -4.2200004,0 -6.3300004,0 -4.38,-0.1 -7.37000004,-2.92 -7.52000004,-7.31 -0.14,-4.05 -0.06,-8.11 -0.06,-12.17 q 0,-20.56 0,-41.13 a 14.94,14.94 0 0 1 0.16,-2.79 7,7 0 0 1 6.00000004,-5.74 10.6,10.6 0 0 1 1.81,-0.21 c 2.5200004,-0.03 5.0200004,-0.02 7.6200004,-0.02 z" />
+  <path
+     d="m 84.472756,15.607429 c 2.95,0 5.79,-0.16 8.61,0 4.3,0.3 6.88,3.4 6.91,8 0,4.95 0,9.9 0,14.84 q 0,18.92 0,37.84 c 0,5.66 -2.94,8.59 -8.63,8.58 h -6.9 v -69.26 z" />
+</svg>
+</span>Luggage: 2</div>
+                    </div>
+                 </div>   
+                <p>The Mercedes-Benz E-class car will be excellent for your business trips. It is characterised by luxury, style and security as well as economy.</p>
+                <div class="block-button-wrap"><a href="index.html#">BOOK THIS RIDE</a></div>
+            	</div>
+                </div>
+            </div>
+            
+                        
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                 <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/bisvan.jpg)"></div>
+                 <div class="block-title">
+                	<h2>Business Van</h2>
+                    <div class="car-props">
+                        <div class="car-prop pass"><span class="icon"><svg   viewBox="0 0 100.01 114.46984"   version="1.1"    >
+  <path
+     d="m 11.97,114.46984 c 0.11,-1.39 0.21,-2.77 0.32,-4.16 q 0.31,-3.71 0.63,-7.41 c 0.2,-2.28 0.41,-4.549996 0.62,-6.829996 0.18,-1.93 0.35,-3.85 0.54,-5.78 0.19,-1.93 0.41,-4 0.63,-6 0.22,-2 0.43,-4.06 0.68,-6.09 a 98.66,98.66 0 0 1 1.76,-11.45 15.73,15.73 0 0 1 7.36,-10 c 1.46,-0.89 3,-1.58 4.57,-2.36 l 0.49,-0.23 -29.57,-31.32 8.11,-6.88 32.14,34.39 a 67.77,67.77 0 0 0 -10.71,3.85 l 0.54,0.6 16.27,17.34 16.56,17.61 17.74,18.899996 5.14,5.48 a 3.88,3.88 0 0 1 0.26,0.34 z"  />
+  <path
+     d="m 100,114.39984 c -0.65,-0.68 -1.31,-1.35 -2,-2 l -10.71,-11.5 -15.76,-16.919996 -15.76,-16.92 -15.29,-16.51 -0.17,-0.21 c 1,-0.22 1.87,-0.45 2.79,-0.64 a 64.55,64.55 0 0 1 15.37,-1.23 59,59 0 0 1 22.06,5 c 2.08,0.91 4.17,1.81 6.17,2.88 a 15.47,15.47 0 0 1 7.6,8.55 22,22 0 0 1 1,4.48 q 0.45,3.23 0.84,6.47 c 0.27,2.26 0.51,4.52 0.76,6.78 0.25,2.26 0.47,4.38 0.7,6.56 0.23,2.18 0.41,4.11 0.61,6.17 q 0.27,2.76 0.54,5.519996 0.27,2.76 0.54,5.74 c 0.19,2 0.37,4 0.55,6 0,0.52 0.12,1 0.17,1.54 v 0.29 z"  />
+  <path
+     d="m 36.15,22.649844 c 0.09,-6.15 1.68,-11.15 5.2,-15.4499996 a 18.72,18.72 0 0 1 10.44,-6.66999996 17.78,17.78 0 0 1 15.82,3.69999996 21.64,21.64 0 0 1 7.7,13.0599996 23.62,23.62 0 0 1 -0.82,12.55 21.08,21.08 0 0 1 -9.1,11.55 17.67,17.67 0 0 1 -10.85,2.58 18.3,18.3 0 0 1 -11.29,-5.07 22,22 0 0 1 -6.76,-12.8 c -0.19,-1.35 -0.24,-2.71 -0.34,-3.45 z"  />
+</svg>
+</span>Passengers: 6</div>
+                        <div class="car-prop lug"><span class="icon"><svg   viewBox="0 0 99.992749 84.947423"   version="1.1"  >
+  <path
+     d="m 23.032756,84.847429 v -69.22 h 7.59 c 0.13,-1.11 0.21,-2.11 0.37,-3.09 1,-6.2699998 4.82,-10.0999998 10.83,-11.54999984 a 35,35 0 0 1 16.51,0 c 6.75,1.62000004 10.62,6.63000004 10.95,13.57999984 0,0.28 0,0.55 0.08,1 h 7.6 v 69.31 h -53.93 z m 15.69,-69.34 h 22.54 a 6.92,6.92 0 0 0 -7,-7.2399998 c -2.75,-0.1 -5.52,-0.06 -8.27,0 -4.3,0.03 -7.04,2.7499998 -7.27,7.2399998 z" />
+  <path
+     d="m 15.612756,15.577429 v 69.37 h -1.68 c -2.11,0 -4.2200004,0 -6.3300004,0 -4.38,-0.1 -7.37000004,-2.92 -7.52000004,-7.31 -0.14,-4.05 -0.06,-8.11 -0.06,-12.17 q 0,-20.56 0,-41.13 a 14.94,14.94 0 0 1 0.16,-2.79 7,7 0 0 1 6.00000004,-5.74 10.6,10.6 0 0 1 1.81,-0.21 c 2.5200004,-0.03 5.0200004,-0.02 7.6200004,-0.02 z" />
+  <path
+     d="m 84.472756,15.607429 c 2.95,0 5.79,-0.16 8.61,0 4.3,0.3 6.88,3.4 6.91,8 0,4.95 0,9.9 0,14.84 q 0,18.92 0,37.84 c 0,5.66 -2.94,8.59 -8.63,8.58 h -6.9 v -69.26 z" />
+</svg>
+</span>Luggage: 5</div>
+                    </div>
+                 </div>  
+                <p>Class V Mercedes-Benz is a particularly convenient transport to transfer larger group, friends or colleagues. It provides comfort and a wide space.</p>
+            	<div class="block-button-wrap"><a href="index.html#">BOOK THIS RIDE</a></div>
+                </div>
+                </div>
+            </div>
+            
+             <div class="block">
+             	<div class="content">
+            	<div class="block-content">
+                 <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/premclass.jpg)"></div>
+                <div class="block-title">
+                	<h2>Premium Class</h2>
+                    <div class="car-props">
+                        <div class="car-prop pass"><span class="icon"><svg   viewBox="0 0 100.01 114.46984"   version="1.1"    >
+  <path
+     d="m 11.97,114.46984 c 0.11,-1.39 0.21,-2.77 0.32,-4.16 q 0.31,-3.71 0.63,-7.41 c 0.2,-2.28 0.41,-4.549996 0.62,-6.829996 0.18,-1.93 0.35,-3.85 0.54,-5.78 0.19,-1.93 0.41,-4 0.63,-6 0.22,-2 0.43,-4.06 0.68,-6.09 a 98.66,98.66 0 0 1 1.76,-11.45 15.73,15.73 0 0 1 7.36,-10 c 1.46,-0.89 3,-1.58 4.57,-2.36 l 0.49,-0.23 -29.57,-31.32 8.11,-6.88 32.14,34.39 a 67.77,67.77 0 0 0 -10.71,3.85 l 0.54,0.6 16.27,17.34 16.56,17.61 17.74,18.899996 5.14,5.48 a 3.88,3.88 0 0 1 0.26,0.34 z"  />
+  <path
+     d="m 100,114.39984 c -0.65,-0.68 -1.31,-1.35 -2,-2 l -10.71,-11.5 -15.76,-16.919996 -15.76,-16.92 -15.29,-16.51 -0.17,-0.21 c 1,-0.22 1.87,-0.45 2.79,-0.64 a 64.55,64.55 0 0 1 15.37,-1.23 59,59 0 0 1 22.06,5 c 2.08,0.91 4.17,1.81 6.17,2.88 a 15.47,15.47 0 0 1 7.6,8.55 22,22 0 0 1 1,4.48 q 0.45,3.23 0.84,6.47 c 0.27,2.26 0.51,4.52 0.76,6.78 0.25,2.26 0.47,4.38 0.7,6.56 0.23,2.18 0.41,4.11 0.61,6.17 q 0.27,2.76 0.54,5.519996 0.27,2.76 0.54,5.74 c 0.19,2 0.37,4 0.55,6 0,0.52 0.12,1 0.17,1.54 v 0.29 z"  />
+  <path
+     d="m 36.15,22.649844 c 0.09,-6.15 1.68,-11.15 5.2,-15.4499996 a 18.72,18.72 0 0 1 10.44,-6.66999996 17.78,17.78 0 0 1 15.82,3.69999996 21.64,21.64 0 0 1 7.7,13.0599996 23.62,23.62 0 0 1 -0.82,12.55 21.08,21.08 0 0 1 -9.1,11.55 17.67,17.67 0 0 1 -10.85,2.58 18.3,18.3 0 0 1 -11.29,-5.07 22,22 0 0 1 -6.76,-12.8 c -0.19,-1.35 -0.24,-2.71 -0.34,-3.45 z"  />
+</svg>
+</span>Passengers: 4</div>
+                        <div class="car-prop lug"><span class="icon"><svg   viewBox="0 0 99.992749 84.947423"   version="1.1"  >
+  <path
+     d="m 23.032756,84.847429 v -69.22 h 7.59 c 0.13,-1.11 0.21,-2.11 0.37,-3.09 1,-6.2699998 4.82,-10.0999998 10.83,-11.54999984 a 35,35 0 0 1 16.51,0 c 6.75,1.62000004 10.62,6.63000004 10.95,13.57999984 0,0.28 0,0.55 0.08,1 h 7.6 v 69.31 h -53.93 z m 15.69,-69.34 h 22.54 a 6.92,6.92 0 0 0 -7,-7.2399998 c -2.75,-0.1 -5.52,-0.06 -8.27,0 -4.3,0.03 -7.04,2.7499998 -7.27,7.2399998 z" />
+  <path
+     d="m 15.612756,15.577429 v 69.37 h -1.68 c -2.11,0 -4.2200004,0 -6.3300004,0 -4.38,-0.1 -7.37000004,-2.92 -7.52000004,-7.31 -0.14,-4.05 -0.06,-8.11 -0.06,-12.17 q 0,-20.56 0,-41.13 a 14.94,14.94 0 0 1 0.16,-2.79 7,7 0 0 1 6.00000004,-5.74 10.6,10.6 0 0 1 1.81,-0.21 c 2.5200004,-0.03 5.0200004,-0.02 7.6200004,-0.02 z" />
+  <path
+     d="m 84.472756,15.607429 c 2.95,0 5.79,-0.16 8.61,0 4.3,0.3 6.88,3.4 6.91,8 0,4.95 0,9.9 0,14.84 q 0,18.92 0,37.84 c 0,5.66 -2.94,8.59 -8.63,8.58 h -6.9 v -69.26 z" />
+</svg>
+</span>Luggage: 2</div>
+                    </div>
+                 </div>  
+                <p>The Mercedes-Benz S-class car is an impostant limousine that will produce elegant effects for important events such as wedding, presentations etc.</p>
+               	<div class="block-button-wrap"><a href="index.html#">BOOK THIS RIDE</a></div>
+            	</div>
+                </div>
+            </div>
+        	
+        </div>
+    </div>
+    </div>
+</div>    
+
+<div class="section reviews" id="costumer_reviews">
+	<div class="wrapper">
+    	<div class="section-title">Costumer reviews</div>
+    	<div class="blocks  reviews" id="slick-reviews">
+        	
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/rev1.jpg)"></div>
+                <div class="block-title">
+                	<h2>John Ambler</h2>
+                    <div class="car-props">
+                        <div class="car-prop">NC Airport - Nica</div>
+                        <div class="car-prop">Total amount paid: 50 €</div>
+                        <div class="car-prop">Business Class</div>
+                    </div>
+                 </div>   
+                <p>We used airport Transfer. The driver was there bang on time he help me loading the luggage’s extremely polite excellent driving then again I highly recommend them to anyone.</p>
+            	</div>
+                </div>
+            </div>
+            
+             <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/rev1.jpg)"></div>
+                <div class="block-title">
+                	<h2>Jessie Jenna</h2>
+                    <div class="car-props">
+                        <div class="car-prop">NC Airport - Nica</div>
+                        <div class="car-prop">Total amount paid: 70 €</div>
+                        <div class="car-prop">Business Class</div>
+                    </div>
+                 </div>   
+                <p>The driver could be monitored on his way to the pick-up and he did call to give his ETA. The vehicle was a good size for all our luggage and the actual journey went very smoothly and we arrived on time.</p>
+            	</div>
+                </div>
+            </div>
+            
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/rev1.jpg)"></div>
+                <div class="block-title">
+                	<h2>Jessie Jenna</h2>
+                    <div class="car-props">
+                        <div class="car-prop">NC Airport - Nica</div>
+                        <div class="car-prop">Total amount paid: 70 €</div>
+                        <div class="car-prop">Business Class</div>
+                    </div>
+                 </div>   
+                <p>The driver could be monitored on his way to the pick-up and he did call to give his ETA. The vehicle was a good size for all our luggage and the actual journey went very smoothly and we arrived on time.</p>
+            	</div>
+                </div>
+            </div>
+            
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/rev1.jpg)"></div>
+                <div class="block-title">
+                	<h2>Jessie Jenna</h2>
+                    <div class="car-props">
+                        <div class="car-prop">NC Airport - Nica</div>
+                        <div class="car-prop">Total amount paid: 70 €</div>
+                        <div class="car-prop">Business Class</div>
+                    </div>
+                 </div>   
+                <p>The driver could be monitored on his way to the pick-up and he did call to give his ETA. The vehicle was a good size for all our luggage and the actual journey went very smoothly and we arrived on time.</p>
+            	</div>
+                </div>
+            </div>
+            
+            <div class="block">
+            	<div class="content">
+            	<div class="block-content ">
+                <div class="block-image" style="background-image:url(template/mt/modules/html_block/tpl_home_page/rev1.jpg)"></div>
+                <div class="block-title">
+                	<h2>Jessie Jenna</h2>
+                    <div class="car-props">
+                        <div class="car-prop">NC Airport - Nica</div>
+                        <div class="car-prop">Total amount paid: 70 €</div>
+                        <div class="car-prop">Business Class</div>
+                    </div>
+                 </div>   
+                <p>The driver could be monitored on his way to the pick-up and he did call to give his ETA. The vehicle was a good size for all our luggage and the actual journey went very smoothly and we arrived on time.</p>
+            	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+$('#slick-reviews').slick({
+	slidesToShow: 2,
+	infinite : true,
+	arrows : false,
+	dots : true,
+	variableWidth: false,
+	responsive: [
+		
+		{
+		  breakpoint: 1240,
+		  settings: {
+				adaptiveHeight : true,
+				infinite : true,
+				edgeFriction: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots : true,
+				arrows : false,
+				autoplay: false,
+				variableWidth: true,
+				centerMode:false,
+				  }
+		}
+	]
+});
+</script>
+
+</div>    
+
+<div class="section partners" id="partners">
+	<div class="wrapper">
+    	<div class="wrapper-bg">
+    	<div class="section-title">Our Partners</div>
+    	<div class="blocks  partners">
+            <div class="block">
+            	<img src="template/mt/modules/html_block/tpl_home_page/par-1.jpg" />
+            </div>
+            
+             <div class="block">
+            	<img src="template/mt/modules/html_block/tpl_home_page/par-2.jpg" />
+            </div>
+        </div>
+    </div>
+    </div>
+</div>    
+
+<div class="section bottom">
+	<div class="wrapper">
+   		<div class="hiw-btn-wrap"><a href="index.html#" class="hiw-btn">HOW IT WORKS</a></div>
+   	</div>
+   </div>   
+    
+<script> 
+		function booking_date(elem){
+			$(elem).datetimepicker({
+				timepicker : false,
+			    format:'d/m/Y'
+			});
+			$(elem).datetimepicker('show');
+		}
+		function booking_time(elem){
+			$(elem).datetimepicker({
+				datepicker : false,
+			   	format:'H:i',
+			   	step : 10
+			});
+			$(elem).datetimepicker('show');
+		}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBr7qUuHxjHbF6vIM5wqiM_hG9bHZCVpEs&libraries=places&callback=initAutocomplete" async defer></script>
+		    
+    
+<script>
+/*************************/
+function ajax_forms_send(elem){
+//	console.log(elem);
+	$(elem).addClass('preloader');
+	
+	//var form = $(elem).parent('form');
+	var formClass = $(elem).attr('form_class');
+	var form = $(elem).parents('form.'+formClass);
+	var fd = {};
+	//console.log(form);
+	
+	$(form).find('.value').each(function(index, elem) {
+		//console.log($(this));
+		if( $(this).attr('required') == 'required' ) var required = true; else var required = false;
+		
+		
+		//if($(this).attr('type') == 'text') value =  $(this).val(),
+		
+		fd[$(this).attr('name')] = {
+				"type" : $(this).attr('type'),
+				"title" : $(this).attr('title'),
+				"name" : $(this).attr('name'),
+            	"value" :$(this).val(),
+            	"prop" : $(this).prop('checked'),
+            	"required" : required
+        };
+	});
+	//alert(value);
+	//console.log(fd);
+	//$('.error').slideUp().html('');
+	$.ajax({ 
+			url: '/template/mt/modules/html_block/tpl_booking_form/ajax.php',
+			type: 'POST',
+			dataType: 'json',
+			data: ({fd:fd}),
+			success:  
+				function(data, textStatus, jqXHR){
+					console.log(data);
+					$(elem).removeClass('preloader');
+					
+					if(data.error !== false){
+						maunty_popup_window_open({
+							content : '<div class="initmap-error">'+data.error+'</div>',
+							buttons : 
+							{			
+									1 : {
+										title : 'Ok',
+										onClick : 'maunty_popup_window_close()'
+									}
+							}
+						});  
+					}else{
+						if(data.href) window.location = data.href;
+					}
+				},
+			error: 
+				function(){
+					alert('ERROR SEND DATA!');
+				}
+		});	
+}
+
+var placeSearch, originautocomplete;
+var componentForm = {
+  street_number: 'short_name',
+  route: 'long_name',
+  locality: 'long_name',
+  administrative_area_level_1: 'short_name',
+  country: 'long_name',
+  postal_code: 'short_name'
+};
+
+function initAutocomplete() {
+  originautocomplete = new google.maps.places.Autocomplete(
+    (document.getElementById('originautocomplete')), {
+      types: ['geocode']
+    });
+  destinationautocomplete = new google.maps.places.Autocomplete(
+    (document.getElementById('destinationautocomplete')), {
+      types: ['geocode']
+    });
+}
+
+function fillInAddress() {
+  var place = autocomplete.getPlace();
+  for (var component in componentForm) {
+    document.getElementById(component).value = '';
+    document.getElementById(component).disabled = false;
+  }
+  for (var i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentForm[addressType]];
+      document.getElementById(addressType).value = val;
+    }
+  }
+}
+
+function geolocate() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocomplete.setBounds(circle.getBounds());
+    });
+  }
+}
+
+function initMap(elem) {
+
+  var origin = document.getElementById('originautocomplete').value;
+  //'Greenwich, England';
+  var destination = document.getElementById('destinationautocomplete').value;
+  //'Stockholm, Sweden';     
+  var geocoder = new google.maps.Geocoder();
+  var service = new google.maps.DistanceMatrixService();
+
+  service.getDistanceMatrix({
+    origins: [origin],
+    destinations: [destination],
+    travelMode: 'DRIVING',
+    unitSystem: google.maps.UnitSystem.METRIC,
+    avoidHighways: false,
+    avoidTolls: false
+  }, function(response, status) {
+	  
+	 
+	  console.log(response);
+	  console.log(status);
+	  if(response.rows[0].elements[0].status =='OK'){
+		if(  'distance' in response.rows[0].elements[0] ){
+			$('#geolocatedistance').val(response.rows[0].elements[0].distance.value);
+	  	}
+		if(  'duration' in response.rows[0].elements[0] ){
+			$('#geolocateduration').val(response.rows[0].elements[0].duration.value);
+	  	} 
+		
+		ajax_forms_send(elem);
+		
+	  }else if(response.rows[0].elements[0].status == 'NOT_FOUND'){
+		  maunty_popup_window_open({
+			
+			content : '<div class="initmap-error">Failed to build route</div>',
+			buttons : 
+			{			
+					1 : {
+						title : 'Ok',
+						onClick : 'maunty_popup_window_close()'
+					}
+			}
+		});  
+		  
+	  }else{
+		maunty_popup_window_open({
+			
+			content : '<div class="initmap-error">Failed to build route</div>',
+			buttons : 
+			{			
+					1 : {
+						title : 'Ok',
+						onClick : 'maunty_popup_window_close()'
+					}
+			}
+		});  
+	  }
+  });
+}
+</script>         
+
+            	</section>
+            
+       </div>
+       
+       		
+       <footer class="">
+       	<div class="wrapper">
+           <div class="links">
+                <span class="insta"><svg  data-name="Layer 1"  viewBox="0 0 100.04 99.97"><path class="cls-1" d="M51.63,9c13.35,0,14.93.05,20.2.29A27.73,27.73,0,0,1,81.11,11,16.55,16.55,0,0,1,90.6,20.5a27.73,27.73,0,0,1,1.72,9.28c.24,5.27.29,6.85.29,20.2s0,14.93-.29,20.2a27.73,27.73,0,0,1-1.72,9.28A16.55,16.55,0,0,1,81.11,89a27.73,27.73,0,0,1-9.28,1.72c-5.27.24-6.85.29-20.2.29s-14.93,0-20.2-.29A27.73,27.73,0,0,1,22.15,89a16.55,16.55,0,0,1-9.49-9.49,27.63,27.63,0,0,1-1.78-9.26c-.24-5.27-.29-6.85-.29-20.2s.05-14.93.29-20.2a27.73,27.73,0,0,1,1.72-9.28A16.55,16.55,0,0,1,22.09,11a27.73,27.73,0,0,1,9.28-1.72C36.64,9.07,38.22,9,51.57,9m0-9C38,0,36.29.08,31,.32A36.58,36.58,0,0,0,18.88,2.64,25.56,25.56,0,0,0,4.25,17.24,36.78,36.78,0,0,0,1.88,29.38c-.24,5.33-.3,7-.3,20.61s.1,15.29.3,20.65A36.78,36.78,0,0,0,4.2,82.78,25.6,25.6,0,0,0,18.88,97.37,36.78,36.78,0,0,0,31,99.69c5.33.24,7,.3,20.62.3s15.28-.06,20.61-.3a36.78,36.78,0,0,0,12.14-2.32A25.61,25.61,0,0,0,99,82.75a36.59,36.59,0,0,0,2.31-12.11c.24-5.33.3-7,.3-20.62s-.06-15.28-.3-20.61A36.78,36.78,0,0,0,99,17.27,25.57,25.57,0,0,0,84.38,2.64,36.78,36.78,0,0,0,72.24.32c-5.33-.24-7-.3-20.61-.3" transform="translate(-1.58 -0.02)"/><path class="cls-1" d="M51.63,24.32A25.68,25.68,0,1,0,77.31,50,25.68,25.68,0,0,0,51.63,24.32h0m0,42.34A16.67,16.67,0,1,1,68.3,50h0A16.67,16.67,0,0,1,51.63,66.64" transform="translate(-1.58 -0.02)"/><path class="cls-1" d="M84.32,23.3a6,6,0,1,1-6-6,6,6,0,0,1,6,6" transform="translate(-1.58 -0.02)"/></svg></span>
+                <span class="facebook"><svg   viewBox="0 0 44.07 83.16"> <path class="cls-2" d="M38.23.12C37,.06,36,0,34.94,0s-2.33,0-3.5,0a20.49,20.49,0,0,0-9.9,2.68A16.42,16.42,0,0,0,14.3,11.6a20.11,20.11,0,0,0-1.14,5.08c-.11,1.2-.19,2.41-.2,3.62V30.69c0,.45,0,.39-.41.39H0V46.23H12.61c.38,0,.38,0,.38.37V83.15H28.66V46.6c0-.38,0-.39.4-.39H41.24c.39,0,.4,0,.45-.39.16-1.16.3-2.32.45-3.49s.33-2.55.5-3.82.32-2.55.49-3.82.29-2.26.44-3.38a1.88,1.88,0,0,0,0-.23H29c-.35,0-.35,0-.35-.35V20.47a8.77,8.77,0,0,1,.42-2.59,4.92,4.92,0,0,1,3.62-3.34,13.2,13.2,0,0,1,3.48-.41h7.89V.56C43.34.49,42.62.41,41.9.36,40.68.27,39.46.18,38.23.12Z" transform="translate(0 0.01)"/></svg></span>
+                <span class="tripadvisor"><svg version="1.1"
+	 viewBox="0 37.8125 200 124.37501" enable-background="new 0 37.8125 200 124.37501" xml:space="preserve">
+<path fill="#37474F" d="M200,62.1875h-35.25c-37.37501-32.5-92.125-32.5-129.5,0H0c0,0,8,9.75,11.25,18.87499
+	C4.25,89.5625,0,100.31249,0,112.18751c0,27.62499,22.375,49.99999,50,49.99999c16.375,0,30.875-8,40-20.25l10.5,20.25
+	l9.62499-20.12498C119.24998,154.18752,133.625,162.1875,150,162.1875c27.625,0,50-22.375,50-49.99999
+	c0-11.875-4.25-22.625-11.25-31.125C192,71.9375,200,62.1875,200,62.1875z M50,149.6875c-20.625,0-37.5-16.875-37.5-37.49999
+	s16.875-37.5,37.5-37.5s37.5,16.875,37.5,37.5S70.625,149.6875,50,149.6875z M100,112.18751c0-25.62501-19.5-46.625-44.5-49.5
+	c27.375-16.5,61.625-16.5,89,0C119.50001,65.5625,100,86.5625,100,112.18751z M150,149.6875c-20.625,0-37.5-16.875-37.5-37.49999
+	s16.875-37.5,37.5-37.5s37.5,16.875,37.5,37.5S170.625,149.6875,150,149.6875z"/>
+<path fill="#FFEB3B" d="M144.5,62.6875c-24.99999,2.875-44.5,23.875-44.5,49.50001c0-25.62501-19.5-46.625-44.5-49.5
+	C82.875,46.1875,117.125,46.1875,144.5,62.6875z"/>
+<g>
+	<path fill="#37474F" d="M50,137.1875c-13.7875,0-25-11.2125-25-24.99999s11.2125-25,25-25s25,11.21249,25,25
+		S63.7875,137.1875,50,137.1875z M50,99.6875c-6.8875,0-12.5,5.6125-12.5,12.50001c0,6.8875,5.6125,12.5,12.5,12.5
+		s12.5-5.61251,12.5-12.5C62.5,105.30001,56.8875,99.6875,50,99.6875z"/>
+	<path fill="#37474F" d="M150,137.1875c-13.78749,0-25-11.2125-25-24.99999s11.21251-25,25-25s25,11.21249,25,25
+		S163.78749,137.1875,150,137.1875z M150,99.6875c-6.89999,0-12.5,5.6125-12.5,12.50001c0,6.8875,5.60001,12.5,12.5,12.5
+		s12.5-5.61251,12.5-12.5C162.5,105.30001,156.89999,99.6875,150,99.6875z"/>
+</g>
+<circle fill="#F44336" cx="50" cy="112.18751" r="6.25"/>
+<circle fill="#4CAF50" cx="150" cy="112.18751" r="6.25"/>
+</svg>
+</span>
+           </div>
+      	</div> 
+       </footer>
+       
+       <div class="over-container " id="over-container">
+        	<div class="over-content" id="over-content"></div>
+    	</div>
+
+	<script type="text/javascript" src="template/mt/js/jquery.fancybox.min.js" ></script>
+    <script type="text/javascript" src="template/mt/overheight/overheight.js%3Fv=7426" ></script>    
+    <script type="text/javascript" src="template/mt/scripts.js%3Fv=89608" ></script>    
+    <script type="text/javascript" src="template/mt/popup_window/popup_window.js" ></script>
+        
+</body>
+</html>
