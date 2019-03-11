@@ -1,0 +1,58 @@
+
+
+/************************************************************/
+function goToHash(elem){
+		// Если есть селектор с указанным якорем,определяем его позицию от начала документа
+		if($(elem.hash).length){
+			var destination = GetOffsetTop($(elem.hash)); 
+			//console.log(destination);
+			//сдвигаем ниже на размер шапки
+			destination -= $('header').innerHeight()+15;
+//			console.log($(elem.hash));
+	//		console.log(elem.hash+' - '+destination+' - '+$("html,body").scrollTop());
+
+			//Закрываем всплывающее окно меню
+			content_overheight_close($('#menu-mobi-button'));	
+			//top_menu_close();
+			
+			//Прокручиваем страницу с анимацией до нужных координат
+			$("html,body").animate({scrollTop: destination}, 1000);
+		}else{
+			return false;
+		}
+	}
+function GetOffsetTop(elem){
+	//Расположение объекта по высоте относительно начала документа
+	var c = $(elem)[0].getBoundingClientRect();
+	
+	//Значение прокрутки
+	var scrollTop = document.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
+	
+	var bodyRect = document.body.getBoundingClientRect();
+	
+	var offsetX = c.top - bodyRect.top;
+	//console.log(' c.top '+c.top+' scrollTop '+scrollTop);	
+	//console.log(' c.top '+c.top+' bodyRect '+ bodyRect.top);	
+	return offsetX;
+}
+
+	
+function fucMenu(){
+	$('#lang-menu').fadeOut();
+	$('#main-menu').fadeIn();
+	} 
+	
+function fucMenuClose(){
+	$('#main-menu').fadeOut();
+	} 	
+function fucLangMenu(){
+	console.log('click');
+	$('#lang-menu').fadeIn();
+	$('#main-menu').fadeOut();
+	
+	} 
+function fucLangMenuClose(){
+	$('#lang-menu').fadeOut();
+	}	
+
+
