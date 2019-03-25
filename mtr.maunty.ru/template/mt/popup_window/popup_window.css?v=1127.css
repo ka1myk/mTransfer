@@ -1,0 +1,72 @@
+
+BODY.ScrollOff{ position:fixed; overflow-y:scroll; width:100%; }
+
+.maunty_popup_container{ display:none; }
+
+.maunty_popup_container.is-show{ display:block;  position:fixed; top:0; left:0; width:100%; height:100%; z-index:11000; background-color:rgba(0, 0, 0, 0.8);
+
+	display: -webkit-box; 
+	-webkit-box-align: center;
+	-webkit-box-pack:center;  
+	
+	display: -webkit-flex; 
+	-webkit-align-items:center;
+	-webkit-justify-content: center;
+	
+	display: flex;
+	align-items:center; 
+	justify-content: center;
+
+}
+
+.maunty_popup_window{ position:relative; box-sizing:border-box; -webkit-border-radius:4px; border-radius:4px; 
+	background:#fff; overflow:hidden; padding:20px; max-height:90%; max-width:90%; z-index:100;
+	
+	display: -webkit-box; 
+	-webkit-box-align: center;
+	-webkit-box-pack:center;  
+	
+	display: -webkit-flex; 
+	-webkit-align-items:center;
+	-webkit-justify-content: center;
+	
+	display: flex;
+	align-items:center; 
+	justify-content: center;
+}
+.maunty_popup_window.has-title{ padding-top:60px;}
+.maunty_popup_window.has-buttons{ padding-bottom:80px;}
+
+
+.maunty_popup_content{ box-sizing:border-box;  min-width:300px; max-height:100%; overflow:auto} 
+
+.maunty_popup_content_title{ position:absolute; top:0; left:0; right:0; height:40px; }
+.maunty_popup_content_buttons{ position:absolute; bottom:0; left:0; right:0; height:70px;  }
+
+.maunty_popup_content_close{ position:absolute; width:20px; height:20px; top:5px; right:5px; z-index:300; cursor:pointer }
+.maunty_popup_content_close:after{ content:'\2716'; display:block; position:absolute; top:0; left:0; width:100%; height:100%; line-height:20px; font-size:18px; color:#FF383B; cursor:pointer; z-index:1; text-align:center}
+
+/*********************/
+
+.maunty_popup_content_title{ box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);   background: #eee;}
+.maunty_popup_content_buttons{ box-shadow: 0 -3px 6px 0 rgba(0,0,0,0.16);   background: #eee; 
+display: -webkit-box; 
+	-webkit-box-align: center;
+	-webkit-box-pack:center;  
+	
+	display: -webkit-flex; 
+	-webkit-align-items:center;
+	-webkit-justify-content: center;
+	
+	display: flex;
+	align-items:center; 
+	justify-content: center;}
+.popup_content_button{ display:block; padding:10px 30px; background:#E24D53; color:#fff;  font-size:22px;  font-family:OpenSans;  text-align:center; border-radius:5px; text-decoration:none;}	
+
+.maunty_popup_content_title .title{ padding:0 15px; line-height:40px; font-size:22px;  font-family:OpenSans;  text-align:center  }
+
+.maunty_popup_content .initmap-error{ padding:30px; text-align:center;}
+
+
+
+
